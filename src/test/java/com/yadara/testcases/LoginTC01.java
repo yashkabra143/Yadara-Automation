@@ -24,11 +24,6 @@ public class LoginTC01 extends TestBase{
 		loginpage = new LoginPage();
 	}
 	
-	@Test
-	public void clossbutton() {
-		homepage.Clickcrossbtn();
-	}
-	
 	@Test(priority = 1)
 	public void  loginpage() throws InterruptedException {
 		Thread.sleep(3000);

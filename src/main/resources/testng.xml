@@ -5,8 +5,6 @@
 	<listeners>
 		<listener class-name="com.yadara.ExtentReportsListener.ExtentReportsListener" />
 	</listeners>
-
-
 	<test name="Checkout Test Cases">
 		<classes>
 			<class name="com.yadara.testcases.LoginTC01"></class>

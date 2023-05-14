@@ -5,9 +5,9 @@
     <classes>
       <class name="com.yadara.testcases.LoginTC01">
         <methods>
-          <include name="loginpage"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="clossbutton"/>
         </methods>
       </class> <!-- com.yadara.testcases.LoginTC01 -->
     </classes>

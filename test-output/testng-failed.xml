@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [YADARA Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.yadara.ExtentReportsListener.ExtentReportsListener"/>
+  </listeners>
+  <test thread-count="5" name="Checkout Test Cases(failed)">
+    <classes>
+      <class name="com.yadara.testcases.LoginTC01">
+        <methods>
+          <include name="loginpage"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.yadara.testcases.LoginTC01 -->
+      <class name="com.yadara.testcases.CheckoutTestcases">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="TC_Checkout_Without_Signin_User" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.yadara.testcases.CheckoutTestcases -->
+    </classes>
+  </test> <!-- Checkout Test Cases(failed) -->
+</suite> <!-- Failed suite [YADARA Automation Test Suite] -->

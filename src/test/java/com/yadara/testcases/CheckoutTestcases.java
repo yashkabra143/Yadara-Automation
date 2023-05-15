@@ -24,7 +24,6 @@ public class CheckoutTestcases extends TestBase{
 		ContactInformationPage continfopage;
 		PaymentPage paymentpage;
 		TestUtils testutils;
-		
 		String sheetName = "payment";
 		
 		
@@ -43,31 +42,30 @@ public class CheckoutTestcases extends TestBase{
 			paymentpage = new PaymentPage();
 		}
 		
-		@DataProvider
-		public Object[][] getpaymentdata() {
-			Object[][] data=TestUtils.getTestData(sheetName);
-			return data;	
-		}
+//		@DataProvider
+//		public Object[][] getpaymentdata() {
+//			Object[][] data=TestUtils.getTestData(sheetName);
+//			return data;	
+//		}
 		
-		@Test (priority = 1, dataProvider = "getpaymentdata")
-		public void TC_Checkout_Without_Signin_User(String Firstname, String Lastname, String Cardnumber, String ExpirationDate, String CVV, String StreetAddress, String City, String State, String ZipCode) throws InterruptedException {
+		@Test (priority = 1)
+		public void TC_Checkout_Without_Signin_User() throws InterruptedException {
 			Thread.sleep(3000);
 			homepage.Clickcrossbtn();
 			header.selectsamsmithconcert();
 			category.addtocartcategory();
 			continfopage.fillcontactpage("yash","kabra","yash@yadara.com","8370043219");
-			paymentpage.fillpaymentpageinfo(Firstname, Lastname, Cardnumber, ExpirationDate, CVV, StreetAddress, City, State, ZipCode);
-		
+			paymentpage.fillpaymentpageinfo("Yash", "Kabra", "411111111111", "1223", "432", "1355", "Indore", "State", "452009");
 		}
-		@Test(priority = 2, dataProvider = "getpaymentdata")
-		public void TC_Checkout_With_SignIn_User(String Firstname, String Lastname, String Cardnumber, String ExpirationDate, String CVV, String StreetAddress, String City, String State, String ZipCode) throws InterruptedException {
+		@Test(priority = 2)
+		public void TC_Checkout_With_SignIn_User() throws InterruptedException {
 			Thread.sleep(3000);
 			homepage.Clickcrossbtn();
 			loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 			header.selectsamsmithconcert();
 			category.addtocartcategory();
 			continfopage.clickonpayment();
-			paymentpage.fillpaymentpageinfo(Firstname, Lastname, Cardnumber, ExpirationDate, CVV, StreetAddress, City, State, ZipCode);	
+			paymentpage.fillpaymentpageinfo("Yash", "Kabra", "411111111111", "1223", "432", "1355", "Indore", "State", "452009");
 	
 		}
 

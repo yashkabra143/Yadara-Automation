@@ -43,6 +43,7 @@ public class PaymentPage extends TestBase{
 		paystate.sendKeys(State);
 		payzip.sendKeys(ZipCode);
 		payorderbtn.click();
+		
 	}
 	
 }

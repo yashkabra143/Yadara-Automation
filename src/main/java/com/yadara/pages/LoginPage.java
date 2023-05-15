@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.yadara.base.TestBase;
 
 public class LoginPage extends TestBase{
-	@FindBy(xpath ="//header/nav[1]/div[1]/div[1]/div[3]/ul[1]/li[3]/span[1]/button[1]")
+	@FindBy(xpath ="//span[contains(text(),'Sign In')]")
 	WebElement homesignin;
 	@FindBy(name = "email")
 	WebElement email;
@@ -20,13 +20,15 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath = "//span[contains(text(),'Sign up')]")
 	WebElement signupbtn;
 	@FindBy(xpath = "//header/nav[1]/div[1]/div[1]/div[3]/ul[1]/li[3]/span[1]/div[1]/img[1]")
-	WebElement avtar;
+	WebElement avatar;
 	
 	//initializing page objects
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+	public void homesigninbtn() {
+		homesignin.isDisplayed();
+	}
 	//Actions
 	public void login(String un, String pwd) {
 		homesignin.click();
@@ -34,10 +36,12 @@ public class LoginPage extends TestBase{
 		password.sendKeys(pwd);
 		signinbtn.click();
 	}
-	public boolean avtar() {
-		return avtar.isDisplayed();
+	public boolean avatar() {
+		return avatar.isDisplayed();
 	}
-	
+	public void enteremail() {
+		//email.sendKeys("");
+	}
 	
 
 }

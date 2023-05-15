@@ -1,29 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-14T23:47:47 IST" name="Default suite" finished-at="2023-05-14T23:47:59 IST" duration-ms="11777">
+  <suite started-at="2023-05-15T22:45:46 IST" name="YADARA Automation Test Suite" finished-at="2023-05-15T22:47:10 IST" duration-ms="83863">
     <groups>
     </groups>
-    <test started-at="2023-05-14T23:47:47 IST" name="Default test" finished-at="2023-05-14T23:47:59 IST" duration-ms="11777">
-      <class name="com.yadara.testcases.LoginTC01">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.yadara.testcases.LoginTC01@20f5239f]" started-at="2023-05-14T23:47:47 IST" name="setup" finished-at="2023-05-14T23:47:53 IST" duration-ms="6170" status="PASS">
+    <test started-at="2023-05-15T22:45:46 IST" name="Yadara Test Cases" finished-at="2023-05-15T22:47:10 IST" duration-ms="83863">
+      <class name="com.yadara.testcases.CheckoutTestcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:46:06 IST" name="setup" finished-at="2023-05-15T22:46:14 IST" duration-ms="7622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginpage()[pri:1, instance:com.yadara.testcases.LoginTC01@20f5239f]" started-at="2023-05-14T23:47:53 IST" name="loginpage" finished-at="2023-05-14T23:47:58 IST" duration-ms="5268" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="TC_Checkout_Without_Signin_User()[pri:1, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:46:14 IST" name="TC_Checkout_Without_Signin_User" finished-at="2023-05-15T22:46:35 IST" duration-ms="20986" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [[[ChromeDriver: chrome on WINDOWS (6729218d416231cdf09314309075242b)] -> xpath: //header/nav[1]/div[1]/div[1]/div[3]/ul[1]/li[3]/span[1]/div[1]/img[1]]] but found [true]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[2]/div[1]/div[1]/div[2]/button[1]"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'YASHU-LAPTOP', ip: '192.168.1.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\yashk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7e0da2cdbbb43670c28524f078e110d
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[2]/div[1]/div[1]/div[2]/button[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS (6729218d416231cdf09314309075242b)] -> xpath: //header/nav[1]/div[1]/div[1]/div[3]/ul[1]/li[3]/span[1]/div[1]/img[1]]] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:617)
-at com.yadara.testcases.LoginTC01.loginpage(LoginTC01.java:34)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[2]/div[1]/div[1]/div[2]/button[1]"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'YASHU-LAPTOP', ip: '192.168.1.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\yashk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7e0da2cdbbb43670c28524f078e110d
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[2]/div[1]/div[1]/div[2]/button[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at jdk.proxy2/jdk.proxy2.$Proxy10.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.yadara.pages.CategoriesPage.addtocartcategory(CategoriesPage.java:30)
+at com.yadara.testcases.CheckoutTestcases.TC_Checkout_Without_Signin_User(CheckoutTestcases.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,15 +91,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yadara.testcases.LoginTC01@20f5239f]" started-at="2023-05-14T23:47:58 IST" name="tearDown" finished-at="2023-05-14T23:47:59 IST" duration-ms="296" status="PASS">
+        </test-method> <!-- TC_Checkout_Without_Signin_User -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:46:35 IST" name="TearDown" finished-at="2023-05-15T22:46:36 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:46:36 IST" name="setup" finished-at="2023-05-15T22:46:43 IST" duration-ms="7446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_Checkout_With_SignIn_User()[pri:2, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:46:43 IST" name="TC_Checkout_With_SignIn_User" finished-at="2023-05-15T22:47:09 IST" duration-ms="26087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Checkout_With_SignIn_User -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.yadara.testcases.CheckoutTestcases@7133da86]" started-at="2023-05-15T22:47:09 IST" name="TearDown" finished-at="2023-05-15T22:47:10 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.yadara.testcases.CheckoutTestcases -->
+      <class name="com.yadara.testcases.LoginTestCases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.yadara.testcases.LoginTestCases@6d3a388c]" started-at="2023-05-15T22:45:46 IST" name="setup" finished-at="2023-05-15T22:45:57 IST" duration-ms="10940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_Login_01()[pri:1, instance:com.yadara.testcases.LoginTestCases@6d3a388c]" started-at="2023-05-15T22:45:57 IST" name="TC_Login_01" finished-at="2023-05-15T22:46:06 IST" duration-ms="8824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Login_01 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yadara.testcases.LoginTestCases@6d3a388c]" started-at="2023-05-15T22:46:06 IST" name="tearDown" finished-at="2023-05-15T22:46:06 IST" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.yadara.testcases.LoginTC01 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.yadara.testcases.LoginTestCases -->
+    </test> <!-- Yadara Test Cases -->
+  </suite> <!-- YADARA Automation Test Suite -->
 </testng-results>

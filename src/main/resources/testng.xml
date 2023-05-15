@@ -5,9 +5,9 @@
 	<listeners>
 		<listener class-name="com.yadara.ExtentReportsListener.ExtentReportsListener" />
 	</listeners>
-	<test name="Checkout Test Cases">
+	<test name="Yadara Test Cases">
 		<classes>
-			<class name="com.yadara.testcases.LoginTC01"></class>
+			<class name="com.yadara.testcases.LoginTestCases"></class>
 			<class name="com.yadara.testcases.CheckoutTestcases"></class>
 			
 
